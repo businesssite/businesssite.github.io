@@ -1,9 +1,10 @@
 /***********Touch***************/
-$(document).ready(function(){
-	$('#touch').click(function(){
-		$('nav ul').slideToggle('slow');
-	});
-
+$(document).ready(function () {
+  $('#touch').click(function(e){
+      e.preventDefault();
+      $(this).toggleClass('active');
+      $('.nav-wrapper').toggleClass('active');
+  });
 });
 /************//**************/
 

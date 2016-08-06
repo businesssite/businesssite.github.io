@@ -2,7 +2,6 @@
 
 @media only screen and (max-width : 1200px) {
 	.step-img{padding:10px 0;}
-	#touch{display: none;}
 }
 /*====================*/
 @media only screen and (max-width : 992px) {
@@ -15,8 +14,25 @@
 	.social a{margin:0 5px;}
 	.phone{border:none;}
 	#touch{display: block;}
-	nav ul{display:none;}
-	nav ul li{float: none;}
+	nav ul li{display: block;}
+	.nav-wrapper{
+		position: absolute;
+		top: 72px;
+		left: 0;
+		background: transparent;
+		width: 200%;
+		transform: translate(-200%, 0);
+		-webkit-transition: 0.5s all ease;
+		-o-transition: 0.5s all ease;
+		transition: 0.5s all ease;
+		z-index: 100;
+	}	
+	.nav-wrapper.active {
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		-o-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
 }
 /*====================*/
 @media only screen and (max-width : 480px) {
