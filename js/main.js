@@ -1,14 +1,17 @@
-/***********Touch***************/
+/**************************/
 $(document).ready(function () {
   $('#touch').click(function(e){
       e.preventDefault();
       $(this).toggleClass('active');
       $('.nav-wrapper').toggleClass('active');
   });
+    $('nav ul li').click(function(){
+      $('.nav-wrapper').removeClass('active');
+    });
 });
+
 /************//**************/
 
-/************Animate*********/
 $(document).ready(function(){
 $('.item').addClass("hidden-box").viewportChecker({
 	classToAdd: 'visible-box animated zoomIn'
@@ -28,10 +31,8 @@ $('.four').addClass("hidden-box").viewportChecker({
 $('.forma, #triangle-up').addClass("hidden-box").viewportChecker({
 	classToAdd: 'visible-box animated flipInX'
 	});
-});  //end document animate
+});  
 /************//**************/
-
-/*******.Register forma*********/
 $(document).ready(function(){
 	$(".forma input").focusin(function() {
 		$(this).css({border:'2px solid #1287bf'});
@@ -41,3 +42,29 @@ $(document).ready(function(){
 	});
 });
 /************//**************/
+  $(document).ready(function(){
+    $("nav ul li").on("click","a", function (event) {
+              event.preventDefault();
+     var id  = $(this).attr('href'),
+     top = $(id).offset().top;         
+    $('body,html').animate({scrollTop: top}, 1000);
+    });
+    })
+/************//**************/  
+jQuery(document).ready(function(){
+    $objWindow = $(window);
+  $('div[data-type="background"]').each(function(){
+  var $bgObj = $(this);
+    $(window).scroll(function() {
+      var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
+      var coords = '100% '+ yPos + 'px';
+      $bgObj.css({ backgroundPosition: coords });
+    });
+  });
+});
+/************//**************/  
+$(document).ready(function(){
+     $('.top').click(function(){
+     $('html,body').animate({scrollTop:0},2000);
+   });
+});

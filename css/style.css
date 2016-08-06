@@ -49,6 +49,16 @@
 		margin: 0 auto;
 		border: 3px solid #424242;
 	}
+	.top i{
+		background: #fff;
+		padding: 15px 15px;
+		border-radius: 50%;
+		color: #de2b24;
+	}
+	.top i:hover{
+		background: #de2b24;
+		color: #fff;
+	}
 	/************Line-header*********************/
 	.line-header{
 		background: #f0f2f4;
