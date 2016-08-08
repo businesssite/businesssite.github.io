@@ -1,50 +1,46 @@
-/*====================*/
-
 @media only screen and (max-width : 1200px) {
-	.step-img{padding:10px 0;}
+  .step-img{padding:10px 0;}
 }
 /*====================*/
 @media only screen and (max-width : 992px) {
-	.nav-btn{margin-left: 10px;}
-	nav ul li{padding-left: 10px;}
+  .nav-btn{margin-left: 10px;}
+  nav ul li{padding-left: 10px;}
 }
 /*====================*/
 @media only screen and (max-width : 768px) {
-	.social-wrap input[type="email"]{max-width: 250px;}
-	.social a{margin:0 5px;}
-	.phone{border:none;}
-	#touch{display: block;}
-	nav ul li{display: block;}
-	.nav-wrapper{
-		position: absolute;
-		top: 72px;
-		left: 0;
-		background: transparent;
-		width: 200%;
-		transform: translate(-200%, 0);
-		-webkit-transition: 0.5s all ease;
-		-o-transition: 0.5s all ease;
-		transition: 0.5s all ease;
-		z-index: 100;
-	}	
-	.nav-wrapper.active {
-		-webkit-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		-o-transform: translate(0, 0);
-		transform: translate(0, 0);
-	}
+  .social-wrap input[type="email"]{max-width: 250px;}
+  .social a{margin:0 5px;}
+  .phone{border:none;}
+  #touch{display: block;}
+  nav ul li{display: block;}
+  .nav-wrapper{
+    position: absolute;
+    top: 72px;
+    left: 0;
+    background: transparent;
+    width: 200%;
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    z-index: 100;
+  } 
+  .nav-wrapper.active {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
 }
 /*====================*/
 @media only screen and (max-width : 480px) {
-	.forma input[type="text"],
-	.forma input[type="email"]{
-		width: 250px;
-		margin: 5px 0;
-	}
-	.forma p{margin-bottom: 15px;}
-	.forma{padding: 15px 0;}
+  .forma input[type="text"],
+  .forma input[type="email"]{
+    width: 250px;
+    margin: 5px 0;
+  }
+  .forma p{margin-bottom: 15px;}
+  .forma{padding: 15px 0;}
 }
 /*====================*/
 @media only screen and (min-width : 768px) {
-	nav ul{display: block !important;}
+  nav ul{display: block !important;}
 }
